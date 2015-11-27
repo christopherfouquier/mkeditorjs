@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Mkeditorjs by christopherfouquier</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Mkeditorjs</h1>
+      <h2 class="project-tagline">wysiwyg markdown developed in javascript native for jquery</h2>
+      <a href="https://github.com/christopherfouquier/mkeditorjs" class="btn">View on GitHub</a>
+      <a href="https://github.com/christopherfouquier/mkeditorjs/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/christopherfouquier/mkeditorjs/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="mkeditor" class="anchor" href="#mkeditor" aria-hidden="true"><span class="octicon octicon-link"></span></a>MKEditor</h1>
+
+<p>Editor wysiwyg in markdown.</p>
+
+<p><img src="https://raw.githubusercontent.com/christopherfouquier/mkeditorjs/master/MKEditor.png" alt="MKEditor"></p>
+
+<h2>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h2>
+
+<p>Copy mkeditor.min.js in folder js and copy mkeditor.min.css in folder css and insert</p>
+
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">script</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>text/javascript<span class="pl-pds">"</span></span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>js/mkeditor.min.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;
+&lt;<span class="pl-ent">link</span> <span class="pl-e">rel</span>=<span class="pl-s"><span class="pl-pds">"</span>stylesheet<span class="pl-pds">"</span></span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>css/mkeditor.min.css<span class="pl-pds">"</span></span>&gt;</pre></div>
+
+<p>in file html.</p>
+
+<h2>
+<a id="initialize" class="anchor" href="#initialize" aria-hidden="true"><span class="octicon octicon-link"></span></a>Initialize</h2>
+
+<div class="highlight highlight-source-js"><pre>$(<span class="pl-s"><span class="pl-pds">'</span>textarea<span class="pl-pds">'</span></span>).<span class="pl-en">MKEditor</span>();</pre></div>
+
+<h2>
+<a id="options" class="anchor" href="#options" aria-hidden="true"><span class="octicon octicon-link"></span></a>Options</h2>
+
+<table>
+<thead>
+<tr>
+<th align="right">Parameter</th>
+<th align="right">Type</th>
+<th align="right">Default</th>
+<th align="right">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="right">placeholder</td>
+<td align="right">String</td>
+<td align="right">''</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="right">language</td>
+<td align="right">String</td>
+<td align="right">'en'</td>
+<td align="right">'en' / 'fr'</td>
+</tr>
+<tr>
+<td align="right">resize</td>
+<td align="right">Boolean</td>
+<td align="right">false</td>
+<td align="right">true / false</td>
+</tr>
+<tr>
+<td align="right">fullscreen</td>
+<td align="right">Boolean</td>
+<td align="right">false</td>
+<td align="right">true / false</td>
+</tr>
+<tr>
+<td align="right">fixed</td>
+<td align="right">Boolean</td>
+<td align="right">false</td>
+<td align="right">true / false</td>
+</tr>
+<tr>
+<td align="right">limit</td>
+<td align="right">Integer</td>
+<td align="right">0</td>
+<td align="right">Int (0 = no limit)</td>
+</tr>
+<tr>
+<td align="right">hideBtn</td>
+<td align="right">Array</td>
+<td align="right">[]</td>
+<td align="right">['bold', 'italic' , 'strike', 'code', 'header', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'link', 'image', 'quote', 'ul', 'ol', 'picture' ]</td>
+</tr>
+<tr>
+<td align="right">upload</td>
+<td align="right">String</td>
+<td align="right">''</td>
+<td align="right"><a href="http://example.fr">http://example.fr</a></td>
+</tr>
+</tbody>
+</table>
+
+<h2>
+<a id="dependencies" class="anchor" href="#dependencies" aria-hidden="true"><span class="octicon octicon-link"></span></a>Dependencies</h2>
+
+<ul>
+<li>jQuery</li>
+<li>FontAwesome</li>
+</ul>
+
+<h2>
+<a id="contributing" class="anchor" href="#contributing" aria-hidden="true"><span class="octicon octicon-link"></span></a>Contributing</h2>
+
+<p>Christopher Jeffrey =&gt; <a href="https://github.com/chjj/marked">chjj/marked</a> : A markdown parser and compiler. Built for speed.</p>
+
+<h2>
+<a id="licence" class="anchor" href="#licence" aria-hidden="true"><span class="octicon octicon-link"></span></a>Licence</h2>
+
+<p>This plugin is available under the ISC license.</p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/christopherfouquier/mkeditorjs">Mkeditorjs</a> is maintained by <a href="https://github.com/christopherfouquier">christopherfouquier</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
