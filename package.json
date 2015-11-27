@@ -1,0 +1,36 @@
+{
+  "name": "mkeditor",
+  "version": "1.0.0",
+  "description": "Editor wysiwyg in markdown",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/dreamteam-etna/mkeditor.git"
+  },
+  "keywords": [
+    "wysiwyg",
+    "editor",
+    "web",
+    "markdown",
+    "mkeditor",
+    "mke",
+    "js",
+    "plugin",
+    "jquery"
+  ],
+  "author": "Christopher Fouquier <christopher.fouquier@gmail.com> (http://www.christopher-fouquier.com/)",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/dreamteam-etna/mkeditor#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-jshint": "^1.11.2",
+    "gulp-minify-html": "^1.0.4",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.0.4",
+    "gulp-uglify": "^1.4.1"
+  }
+}

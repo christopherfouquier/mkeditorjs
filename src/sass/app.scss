@@ -1,0 +1,188 @@
+*, body, html {
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;
+}
+
+body {
+    background: #CCC;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    margin: 100px auto;
+    height: 2000px;
+    width: 960px;
+}
+
+.mke {
+    border: 1px solid #eee;
+    overflow: hidden;
+    height: 300px;
+    margin: auto;
+    width: 600px;
+    position: relative;
+}
+
+.mke-toolbar {
+    height: 30px;
+    background: #fff;
+    width: 100%;
+    padding: 10px;
+
+    position: absolute;
+    z-index: 1070;
+
+    margin: 0 !important;
+    padding: 0 !important;
+    list-style: none !important;
+    //line-height: 60px;
+    background: #fff;
+    border: none;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+.mke-toolbar.mke-toolbar-static {
+    position: fixed;
+    top: 0;
+}
+.mke-toolbar li {
+    //vertical-align: top;
+    display: inline-block;
+    margin: 0 !important;
+    padding: 0 !important;
+    outline: none;
+    list-style: none !important;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+.mke-toolbar button {
+    background: transparent;
+    display: block;
+    color: #333;
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    zoom: 1;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+.mke-toolbar .submenu {
+    position: absolute;
+    min-width: 100px;
+    height: auto;
+    background: #fff;
+    top: 60px;
+    padding-left: 10px;
+    display: none;
+}
+.mke-toolbar .submenu.open {
+    display: block;
+}
+.mke-toolbar .submenu li {
+    display: block;
+}
+.mke-toolbar .submenu button {
+    padding: 10px;
+}
+
+.mke-editor,
+.mke-preview {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    width: 50%;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    padding: 30px;
+    height: inherit;
+}
+
+.mke-editor {
+    border: 0;
+    resize: none;
+    background: #f5f5f5;
+    float: left;
+}
+.mke-editor:focus {
+    outline: none !important;
+}
+
+.mke-preview {
+    /*position: absolute;*/
+    position: relative;
+    color: #000;
+    background: #fff;
+    float: left;
+    overflow-x: scroll;
+    /*top: 0;
+    left: 50%;
+    bottom: 0;*/
+}
+.mke-preview a {
+    color: rgb(0, 0, 238);
+    text-decoration: none;
+}
+.mke-preview img {
+    max-width: 100%;
+}
+
+.mke-info {
+    border-top: 1px solid #eee;
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    line-height: 20px;
+    background: #fff;
+    color: #000;
+    position: absolute;
+    bottom: 0;
+    height: 20px;
+    padding-left: 10px;
+    width: 100%;
+}
+.mke-info span {
+    margin-right: 10px;
+}
+
+/* FULLSCREEN */
+.mke-fullscreen-mode {
+    width: 100%;
+    height: 100%;
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    padding: 0;
+    background: #fff!important;
+    border: 0!important;
+}
+.mke-fullscreen-mode .mke-editor,
+.mke-fullscreen-mode .mke-preview {
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    margin-top: 60px;
+    padding: 60px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+.mke-fullscreen-mode .mke-preview {
+    right: 0;
+    bottom: 0;
+    top: 0;
+    left: auto;
+    overflow-y: auto;
+}
+.mke-fullscreen-mode .mke-toolbar {
+    position: fixed;
+    height: 60px;
+    width: 100%;
+}
+.mke-fullscreen-mode .mke-toolbar button {
+    padding: 22px;
+    font-size: 16px;
+}
